@@ -1,0 +1,38 @@
+<!-- DeLander Collins Jr. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phone Form</title>
+</head>
+
+<body>
+<form method="GET" action="completed.html" name="customerInfo">
+  <fieldset>
+    <legend> Customer Information</legend>
+    <label>First name</label>
+    <input type="text" name="firstName"maxlength="30" required="required"/> <br>
+    <label>Last name</label>
+    <input type="text" name="lastName" required="required"/> <br>
+    <label>Cell Phone Number</label>
+    <input type="text" name="cellNumber" required="required"/> <br>
+    <br>
+    <input type="radio" name="provider" value="verizon"
+    checked="checked"/> Verizon
+    <input type="radio" name="provider" value="at&t"/> AT&T
+    <input type="radio" name="provider" value="tmobile"/> T-Mobile
+    <input type="radio" name="provider" value="sprint"/> Sprint
+  </fieldset>
+
+  <!-- Create submit Button -->
+  <input type="submit" name="Submit" value="submit" />
+  <input type="reset" name="resetSubmitButton" value="Reset" />
+</form>
+
+
+
+
+
+
+</body>
+
+</html>
