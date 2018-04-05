@@ -1,0 +1,12 @@
+/* change the font, background color and center*/
+* {font-family: "Monotype Corsiva", serif;
+    text-align: center; color: LightGray;}
+
+/*change the background image*/
+body {
+        background-image: url("Crowd-Wallpaper-Full-HD.jpg");
+    }
+#album {color: gold;}
+
+.fieldset-width {display: inline; width: 800px; background-color: black;
+                 opacity: .85;}
