@@ -1,0 +1,155 @@
+<!-- DeLander Collins Jr. -->
+<!-- Assignment 1: Orderup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel=stylesheet type=text/css href=Orderup.css />
+  <title>Place An Order</title>
+</head>
+
+<body>
+  <h1> Place an Order for...</h1>
+  <p><b>Professor Irani's New Mixtape:</b><em id="album"> Get Data or Post Trying!!!</em></h1>
+  <br>
+  <br>
+
+<!-- Mixtape Image -->
+ <img src="mixtape_event.png" alt="OGTape" width="200">
+
+<form method="POST" action="results.html" name="customerInfo">
+  <fieldset class="fieldset-width">
+    <legend> Billing Address</legend>
+    <label>First name</label>
+    <input type="text" name="firstName" maxlength="30" required="required"/> <br>
+    <label>Last name</label>
+    <input type="text" name="lastName" required="required"/> <br>
+    <label>Street</label>
+    <input type="text" name="address" required="required"/> <br>
+    <label>City</label> <input type="text" name="city" required="required"/> <br>
+    <label>State
+      <select name="states">
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DE">DE</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+      </select>
+    </fieldset>
+    <br>
+
+    <fieldset class="fieldset-width">
+      <legend> Payment </legend>
+      <input type="radio" name="cardType" value="visa" checked="checked"/> Visa
+      <input type="radio" name="cardType" value="master"/> Master Card
+      <input type="radio" name="cardType" value="discover"/> Discover
+      <input type="radio" name="cardType" value="americanExpress"/>
+      American Express
+      <br><br>
+      <label>Card #</label>
+      <input type="text" name="cardNumber"required="required"/>
+      <br>
+
+      <label>Expiration</label>
+      <select name="cardExpirationMonth">
+        <option value="1">01</option>
+        <option value="2">02</option>
+        <option value="3">03</option>
+        <option value="4">04</option>
+        <option value="5">05</option>
+        <option value="6">06</option>
+        <option value="7">07</option>
+        <option value="8">08</option>
+        <option value="9">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <select name="cardExpirationYear">
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+      <option value="2026">2026</option>
+      <option value="2027">2027</option>
+      <option value="2028">2028</option>
+      <option value="2029">2029</option>
+      <option value="2030">2030</option>
+    </select>
+    <br>
+    <label>CCV</label> <input type="text" name="ccv" required="required"/> <br>
+  </fieldset>
+  <br>
+
+  <fieldset class="fieldset-width">
+    <legend> Create Account? </legend>
+    <label>Username</label>
+    <input type="text" name="username" required="required" />
+    <label>Password</label>
+    <input type="password" name="password" required="required"/>
+    <label>Password (Verify)</label>
+    <input type="password" name="passwordVerify" required="required"/>
+  </fieldset>
+  <br>
+
+  <!-- Create submit Button -->
+  <input type="submit" name="placeOrderButton" value="Place Order" />
+  <input type="reset" name="resetOrderButton" value="Reset" />
+</form>
+
+
+
+
+
+
+</body>
+
+</html>
